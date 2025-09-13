@@ -1,12 +1,11 @@
 import 'package:evently_project/core/resources/asset_manager.dart';
-import 'package:evently_project/core/resources/colors_manager.dart';
 import 'package:evently_project/core/resources/validator.dart';
+import 'package:evently_project/core/routes_manager/routes_manager.dart';
 import 'package:evently_project/core/widget/custom_elevated_bottom.dart';
 import 'package:evently_project/core/widget/custom_text_button.dart';
 import 'package:evently_project/core/widget/custome_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -123,7 +122,15 @@ class _RegisterState extends State<Register> {
                       'Already Have Account ?',
                       style: Theme.of(context).textTheme.bodySmall,
                     ),
-                    CustomTextButton(text: 'Login', onTab: () {}),
+                    CustomTextButton(
+                      text: 'Login',
+                      onTab: () {
+                        Navigator.pushReplacementNamed(
+                          context,
+                          RouteManager.login,
+                        );
+                      },
+                    ),
                   ],
                 ),
               ],
@@ -148,7 +155,6 @@ class _RegisterState extends State<Register> {
 
   void _createAccount() {
     if (_formkey.currentState?.validate() == false) return;
-    print('s');
   }
 
   @override
