@@ -1,11 +1,13 @@
 import 'package:evently_project/feature/auth/login/login.dart';
 import 'package:evently_project/feature/auth/register/register.dart';
+import 'package:evently_project/feature/main_layout/main_layout.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 abstract class RouteManager {
   static const String register = '/register';
   static const String login = '/login';
+  static const String mainLayout = '/mainLayout';
 
     static Route? router (RouteSettings settings){
       switch (settings.name){
@@ -14,6 +16,9 @@ abstract class RouteManager {
         }
         case login:{
           return CupertinoPageRoute(builder: (context)=> Login());
+        }
+        case mainLayout:{
+          return CupertinoPageRoute(builder: (context) => MainLayout());
         }
       }
     }
