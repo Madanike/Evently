@@ -80,11 +80,31 @@ class ThemeManager {
       ),
     ),
     textTheme: TextTheme(
+      headlineSmall:  GoogleFonts.inter(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.w400,
+        color: ColorsManager.white,
+      ),
+      headlineMedium:  GoogleFonts.inter(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.bold,
+        color: ColorsManager.blue,
+      ),
+      headlineLarge: GoogleFonts.inter(
+        fontSize: 24.sp,
+        fontWeight: FontWeight.w700,
+        color: ColorsManager.white,),
       bodySmall:   GoogleFonts.inter(
       fontSize: 16.sp,
       fontWeight: FontWeight.w500,
       color: ColorsManager.black1c,
     ),
+      titleSmall:  GoogleFonts.inter(
+        fontSize: 14.sp,
+        fontWeight: FontWeight.bold,
+        color: ColorsManager.black1c,
+      ),
+
     ),
   );
 
