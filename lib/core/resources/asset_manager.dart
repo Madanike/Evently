@@ -12,6 +12,7 @@ class AssetsImages{
   static const String workshop = '$base/workshop.png';
   static const String eating = '$base/eating.png';
   static const String bookClub = '$base/book_club.png';
+  static const String profileImage = '$base/profileImage.png';
 
 
 }

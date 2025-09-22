@@ -21,12 +21,9 @@ class ThemeManager {
       backgroundColor: ColorsManager.blue,
       foregroundColor: ColorsManager.white,
       shape: StadiumBorder(
-        side: BorderSide(
-          color: ColorsManager.white,
-          width: 4,
-        )
-      )
-    ) ,
+        side: BorderSide(color: ColorsManager.white, width: 4),
+      ),
+    ),
     bottomAppBarTheme: BottomAppBarTheme(
       color: ColorsManager.blue,
       shape: CircularNotchedRectangle(),
@@ -80,12 +77,12 @@ class ThemeManager {
       ),
     ),
     textTheme: TextTheme(
-      headlineSmall:  GoogleFonts.inter(
+      headlineSmall: GoogleFonts.inter(
         fontSize: 14.sp,
         fontWeight: FontWeight.w400,
         color: ColorsManager.white,
       ),
-      headlineMedium:  GoogleFonts.inter(
+      headlineMedium: GoogleFonts.inter(
         fontSize: 14.sp,
         fontWeight: FontWeight.bold,
         color: ColorsManager.blue,
@@ -93,18 +90,28 @@ class ThemeManager {
       headlineLarge: GoogleFonts.inter(
         fontSize: 24.sp,
         fontWeight: FontWeight.w700,
-        color: ColorsManager.white,),
-      bodySmall:   GoogleFonts.inter(
-      fontSize: 16.sp,
-      fontWeight: FontWeight.w500,
-      color: ColorsManager.black1c,
-    ),
-      titleSmall:  GoogleFonts.inter(
+        color: ColorsManager.white,
+      ),
+      bodySmall: GoogleFonts.inter(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.black1c,
+      ),
+      titleSmall: GoogleFonts.inter(
         fontSize: 14.sp,
         fontWeight: FontWeight.bold,
         color: ColorsManager.black1c,
       ),
-
+      labelMedium: GoogleFonts.inter(
+        fontWeight: FontWeight.bold,
+        fontSize: 20.sp,
+        color: ColorsManager.black1c,
+      ),
+      displayMedium: GoogleFonts.inter(
+        fontWeight: FontWeight.bold,
+        fontSize: 20.sp,
+        color: ColorsManager.blue,
+      ),
     ),
   );
 
