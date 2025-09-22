@@ -1,4 +1,5 @@
 import 'package:evently_project/core/resources/colors_manager.dart';
+import 'package:evently_project/core/routes_manager/routes_manager.dart';
 import 'package:evently_project/feature/main_layout/tabs/favorite/favorite_tab.dart';
 import 'package:evently_project/feature/main_layout/tabs/home/home_tab.dart';
 import 'package:evently_project/feature/main_layout/tabs/map/map_tab.dart';
@@ -31,7 +32,9 @@ class _MainLayoutState extends State<MainLayout> {
   Widget _buildFab(){
     return FloatingActionButton(
       backgroundColor: ColorsManager.blue,
-      onPressed: () {},
+      onPressed: () {
+      Navigator.pushNamed(context,RouteManager.createEvent);
+      },
       child: Icon(Icons.add),
     );
   }

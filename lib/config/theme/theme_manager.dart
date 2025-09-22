@@ -112,6 +112,11 @@ class ThemeManager {
         fontSize: 20.sp,
         color: ColorsManager.blue,
       ),
+      labelSmall: GoogleFonts.inter(
+        fontSize: 16.sp,
+        fontWeight: FontWeight.w500,
+        color: ColorsManager.black1c,
+      ),
     ),
   );
 
